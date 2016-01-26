@@ -26,13 +26,35 @@
                 "tabindex": "5",
                 "title": "Titre"
             }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            }
+        },
+        "textField": {
+            "prototype": "montage/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "value": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
-        <button data-montage-id="button"></button>
+        <button data-montage-id="BBB"></button>
+        <p data-montage-id="text"></p>
+        <input data-montage-id="textField" type="text">
     </div>
 </body>
 </html>
