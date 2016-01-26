@@ -9,12 +9,64 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Mycomponent"
+            }
+        },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
+        "list": {
+            "prototype": "digit/ui/list.reel",
+            "properties": {
+                "element": {"#": "list"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "listItem": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "listItem"}
+            }
+        },
+        "listItem2": {
+            "prototype": "digit/ui/list-item.reel",
+            "properties": {
+                "element": {"#": "listItem2"},
+                "classList": {
+                    "type": "set",
+                    "values": {
+                        "0": ""
+                    }
+                }
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="MyComponent">
+        <button data-montage-id="button"></button>
+        <input type="checkbox" data-montage-id="checkbox">
+            <ul data-montage-id="list">
+                <li data-montage-id="listItem2"></li>
+                <li data-montage-id="listItem">
+
+                </li>
+                <li></li>
+            </ul>
+        </input>
     </div>
 </body>
 </html>
