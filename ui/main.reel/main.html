@@ -13,6 +13,16 @@
                 "element": {"#": "main"}
             }
         },
+        "actionEventListener": {
+            "prototype": "montage/core/event/action-event-listener",
+            "properties": {
+                "action": "myFunction",
+                "handler": {"@": "button"}
+            },
+            "_dev": {
+                "isHidden": true
+            }
+        },
         "button": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -26,6 +36,19 @@
                 "label": "New Task",
                 "tabindex": "5",
                 "title": "Titre"
+            },
+            "listeners": [
+                {
+                    "type": "onClick",
+                    "useCapture": false,
+                    "listener": {"@": "actionEventListener"}
+                }
+            ]
+        },
+        "myComponent": {
+            "prototype": "ui/my-component.reel",
+            "properties": {
+                "element": {"#": "myComponent"}
             }
         },
         "text": {
@@ -56,6 +79,7 @@
         <button data-montage-id="BBB"></button>
         <p data-montage-id="text"></p>
         <input data-montage-id="textField" type="text">
+        <div data-montage-id="myComponent"></div>
     </div>
 </body>
 </html>
