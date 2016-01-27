@@ -1,7 +1,7 @@
 .MyComponent {
 
 }
-.MyButton.digit-Button {
+.button.digit-Button {
     text-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.4);
     border-color: hsl(140, 100%, 34%);
     background-image: linear-gradient( hsl(140, 100%, 54%), 
