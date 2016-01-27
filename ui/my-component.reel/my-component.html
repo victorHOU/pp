@@ -14,7 +14,11 @@
             "prototype": "digit/ui/button.reel",
             "properties": {
                 "element": {"#": "button"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
                 "enabled": true,
+                "identifier": "button",
                 "label": "Mycomponent"
             }
         },
@@ -43,7 +47,6 @@
         "listItem2": {
             "prototype": "digit/ui/list-item.reel",
             "properties": {
-                "element": {"#": "listItem2"},
                 "classList": {
                     "type": "set",
                     "values": {
@@ -59,14 +62,12 @@
     <div data-montage-id="owner" class="MyComponent">
         <button data-montage-id="button"></button>
         <input type="checkbox" data-montage-id="checkbox">
-            <ul data-montage-id="list">
-                <li data-montage-id="listItem2"></li>
-                <li data-montage-id="listItem">
+        <ul data-montage-id="list">
+            <li data-montage-id="listItem">
 
-                </li>
-                <li></li>
-            </ul>
-        </input>
+            </li>
+            <li></li>
+        </ul>
     </div>
 </body>
 </html>
