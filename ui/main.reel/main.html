@@ -10,7 +10,10 @@
     {
         "owner": {
             "properties": {
-                "element": {"#": "main"}
+                "element": {"#": "main"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
             }
         },
         "actionEventListener": {
@@ -29,7 +32,7 @@
                 "element": {"#": "BBB"},
                 "active": false,
                 "contenteditable": "true",
-                "dir": "rtl",
+                "dir": "ltr",
                 "draggable": "true",
                 "enabled": true,
                 "holdThreshold": "4",
@@ -44,6 +47,65 @@
                     "listener": {"@": "actionEventListener"}
                 }
             ]
+        },
+        "button2": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button2"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "flow": {
+            "prototype": "montage/ui/flow.reel",
+            "properties": {
+                "element": {"#": "flow"},
+                "cameraPosition": [
+                    0,
+                    0,
+                    1500
+                ],
+                "paths": [
+                    {
+                        "knots": [
+                            {
+                                "knotPosition": [
+                                    -2400,
+                                    0,
+                                    -1
+                                ],
+                                "nextHandlerPosition": [
+                                    -800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            },
+                            {
+                                "knotPosition": [
+                                    2400,
+                                    0,
+                                    -1
+                                ],
+                                "previousHandlerPosition": [
+                                    800,
+                                    0,
+                                    -1
+                                ],
+                                "previousDensity": 10,
+                                "nextDensity": 10
+                            }
+                        ],
+                        "headOffset": 0,
+                        "tailOffset": 0,
+                        "units": {}
+                    }
+                ]
+            }
         },
         "myComponent": {
             "prototype": "ui/my-component.reel",
@@ -101,6 +163,10 @@
         <input data-montage-id="textField" type="text">
         <div data-montage-id="myComponent"></div>
         <div data-montage-id="slider"></div>
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" data-montage-id="flow">
+            <button data-montage-id="button"></button>
+            <button data-montage-id="button2"></button>
+        </div>
     </div>
 </body>
 </html>
