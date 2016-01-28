@@ -55,6 +55,22 @@
                 "identifier": "MyButton"
             }
         },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "vertical",
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true",
+                "enabled": true,
+                "identifier": "slider",
+                "max": 100,
+                "min": 0,
+                "step": "1",
+                "value": 50
+            }
+        },
         "text": {
             "prototype": "montage/ui/text.reel",
             "properties": {
@@ -84,6 +100,7 @@
         <p data-montage-id="text"></p>
         <input data-montage-id="textField" type="text">
         <div data-montage-id="myComponent"></div>
+        <div data-montage-id="slider"></div>
     </div>
 </body>
 </html>
